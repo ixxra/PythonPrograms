@@ -13,9 +13,12 @@ Find the difference between the sum of the squares of the first one hundred natu
 
 '''
 
-A=[i**2 for i in range(1,101)]
-AA=sum(A)
-B=[i for i in range(1,101)]
-BB=sum(B)
-C=BB**2 -AA
+A=sum([i**2 for i in range(1,101)])
+B=sum([i for i in range(1,101)])
+C=B**2 -A
 print C
+
+#O TAMBIEN
+n=100
+S=((n*(n+1))/2)**2 - n*(n+1)*(2*n+1)/6
+print S

@@ -7,27 +7,25 @@ What is the largest prime factor of the number 600851475143 ?
 '''
 
 import time
-import numpy as np
 def factor(t):
     a=[]
-    while t/2.0==t/2:
+    while t%2==0:
         t=t/2
         a=a+[2]
-    for i in range(3,int(t**.5)+1):
+    for i in range(3,int(t**.5)+1,2):
         if t<=1:
             break
         else:
-            while t/i==t/float(i):
+            while t%i==0:
                 a=a+[i]
                 t=t/i
     a=a+[t]
 
     return a
-a= time.time()
+k= time.time()
 #print factor(600851475143 )
 #for i in range(2000,2050):
 #    print i, factor(i)
-print factor(2240)
+print factor(2014)
 
 b= time. time()
-print b-a
