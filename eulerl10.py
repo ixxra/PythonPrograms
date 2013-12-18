@@ -19,7 +19,7 @@ def primesbeforen(n):
                 S[m*i]=False
     #print S
     print sum(P)
-
+    print P
 
 
 r=2000000

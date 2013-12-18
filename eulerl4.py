@@ -10,14 +10,11 @@ a=time.time()
 numbers=[]
 for i in range(999,99,-1):
     for z in range(i,99,-1):
-        N=str(z*i)
-        L=len(N)-1
-        for p in range(L):
-            if (N[p]==N[L-p])==False:
-                break
-            if 2*p>L and (N[p]==N[L-p])==True:
-                M=int(N)
-                numbers.append(M)
+        e=z*i
+        N=str(e)
+        NN=N[::-1]
+        if N==NN:
+            numbers.append(e)
 print max(numbers)
 b=time.time()
 print b-a

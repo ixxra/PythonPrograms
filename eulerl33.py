@@ -24,6 +24,7 @@ for i in range(10,100):
                     if p==True:
                         if float(y)/int(z)==float(i)/j:
                             print i,j
+                            print 'la pareja es', y,y
                             r4+=1
                             continue
                     if q==True:
