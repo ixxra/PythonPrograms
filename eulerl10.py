@@ -8,7 +8,7 @@ Find the sum of all the primes below two million.
 
 
 import time
-def primesbeforen(n):
+def primes(n):
     P=[]
     S=[True]*n
     S[0],S[1]= False, False
@@ -17,13 +17,12 @@ def primesbeforen(n):
             P.append(i)
             for m in xrange(2,n/i):
                 S[m*i]=False
-    #print S
     print sum(P)
     print P
 
 
 r=2000000
 comienzo=time.time()
-print primesbeforen(r)
+primes(r)
 final=time.time()
 print "Tiempo tardado :D :" , final - comienzo
