@@ -13,4 +13,4 @@ for i in xrange(len(L)):
         s+=o
     s*=i+1
     N.append(s)
-print sum(N)
+print max(N)
