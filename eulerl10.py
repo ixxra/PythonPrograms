@@ -21,7 +21,7 @@ def primes(n):
     print P
 
 
-r=2000000
+r=1000000000
 comienzo=time.time()
 primes(r)
 final=time.time()
