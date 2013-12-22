@@ -1,18 +1,18 @@
 import time
-a=time.time()
+k=time.time()
+a=[10**i for i in range(2,18)]
+print a[0]
 for i in xrange(10**8+10**6+1,14*10**7,2):
     if i%10==3 or i%10==7:
         n=i**2
-        a2 , a3 , a4 , a5 , a6 , a7 , a8 , a9 , a10 , a11 = 10**2 , 10**3 , 10**4 , 10**5 , 10**6 , 10**7 , 10**8 , 10**9 , 10**10 , 10**11
-        a12 , a13 , a14 , a15 , a16 , a17 =10**12 , 10**13 , 10**14 , 10**15 , 10**16 , 10**17
-        if n%a3/a2 - 8 ==0:
-            if n%a5/a4 - 7 ==0:
-                if n%a7/a6 - 6 ==0:
-                    if n%a9/a8 - 5 ==0:
-                        if n%a11/a10 - 4 ==0:
-                            if n%a13/a12 - 3 ==0:
-                                if n%a15/a14 - 2 ==0:
-                                    if n%a17/a16 - 1 ==0:
+        if n%a[1]/a[0] - 8 ==0:
+            if n%a[3]/a[2] - 7 ==0:
+                if n%a[5]/a[4] - 6 ==0:
+                    if n%a[7]/a[6] - 5 ==0:
+                        if n%a[9]/a[8] - 4 ==0:
+                            if n%a[11]/a[10] - 3 ==0:
+                                if n%a[13]/a[12] - 2 ==0:
+                                    if n%a[15]/a[14] - 1 ==0:
                                         print i*10
                                         break
-print time.time()-a
+print time.time()-k
