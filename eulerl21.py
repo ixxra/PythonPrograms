@@ -53,4 +53,6 @@ for j in range(len(L)):
                 amig.append(j)
 print sum(amig)
 print amig
-print L
+
+for i in range(len(amig)):
+    print amig[i],sumdiv(amig[i])
