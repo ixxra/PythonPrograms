@@ -15,10 +15,10 @@ def factor(t):
 
     return a
 k= time.time()
-print factor(134043)
+print factor(13082761331670030)
 #print factor(600851475143 )
 #for i in range(2000,2050):
 #    print i, factor(i)
-print factor(2014)
+#print factor(2014)
 
 b= time. time()

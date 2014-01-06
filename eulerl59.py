@@ -30,8 +30,7 @@ for i in range(97,123):
             u=1
     if u==0:
         firstkey.append(i)
-print firstkey
-
+        
 secondkey=[]
 for i in range(97,123):
     u=0
@@ -44,8 +43,7 @@ for i in range(97,123):
             u=1
     if u==0:
         secondkey.append(i)
-print secondkey
-
+        
 thirdkey=[]
 for i in range(97,123):
     u=0
@@ -58,8 +56,6 @@ for i in range(97,123):
             u=1
     if u==0:
         thirdkey.append(i)
-print thirdkey
-
 
 for a in firstkey:
     for b in secondkey:
@@ -68,4 +64,5 @@ for a in firstkey:
             G=traduce(T)
             if 'and' in G and 'the' in G:
                 print G,[a,b,c]
-                print sum(T)
+                print "Code:", [a,b,c]
+                print "Answer=", sum(T)
