@@ -11,21 +11,23 @@ def primes(n):
                 if m*i<len(S):
                     S[m*i]=False
     return P
-RES=primes(50000)
-MRES=[res*-1 for res in RES]
+RES=set(primes(50000))
+MRES=set([res*-1 for res in RES])
 K=primes(1000)
 K.remove(2)
 tmax=40
 solution=(0,0,0)
+
+
 for z in range(len(K)):
     b=K[z]
     for j in range(1,1000,2):
         print z,j
         a=j
-        s1=(RES.count(a+b+1)!=0)
-        s2=(RES.count(a-b+1) !=0 or MRES.count(a-b+1) !=0)
-        s3=(RES.count(b-a+1) !=0 or MRES.count(a-b+1) !=0)
-        s4=MRES.count(-a-b+1)
+        s1=a+b+1 in RES
+        s2=((a-b+1 in RES) or (a-b+1 in MRES))
+        s3=((b-a+1 in RES) or (b-a+1 in MRES))
+        s4=-a-b+1 in MRES
         if s1==True:
             f= lambda n: n**2 + n*a + b
             e=0
