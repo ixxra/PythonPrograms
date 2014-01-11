@@ -17,12 +17,11 @@ nmax=0
 trivial=4
 maxd=trivial
 for i in xrange(999,12,-1):
-    print i,'este es i','este es i','este es i','este es i','este es i','este es i'
+    print i
     trivial=4
     F=Decimal(1.)/Decimal(i)
     if i in K:
         L=[x for x in str(F)]
-        #print L
         T=False
         while T==False:
             #print L[2:maxd]
